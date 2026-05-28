@@ -6,6 +6,62 @@
 
 // Digitar o código (Feito pelo Professor - AQUI)
 
+class Cachorro {
+    
+    // # Atributos privados(Encapsulados)
+    // ou seja não permite acesso direto
+    #nome 
+    #comida
+    #sono
+
+    // Contrutor (Executado automaticamente)
+    // quando criamos um objeto
+    // Ele recebe valores iniciais e salva
+    // dentros dos atributos
+    // this é como dizer "Meu próprio atributo"
+    
+    constructor(nome, comida, sono) {
+        this.#nome = nome;
+        this.#comida = comida;
+        this.#sono = sono;
+    }
+
+    // Método comer
+    comer() {
+        this.#comida -= 1
+    }
+
+    // Método dormir
+    dormir() {
+        this.#sono = false
+    }
+
+    // Getters para poder acessar
+    getNome () {
+        return this.#nome
+    }
+
+    getComida () {
+        return this.#comida
+    }
+
+    getSono () {
+        return this.#sono
+    }   
+
+}
+
+
+    // Criando instâncias ou objetos
+    const cachorro1 = new Cachorro("Nina", 3, false)
+    const cachorro2 = new Cachorro("Teo", 2, true)
+
+    // Usando métodos
+    cachorro1.comer()
+    cachorro2.dormir()
+
+
+
 
 
 
